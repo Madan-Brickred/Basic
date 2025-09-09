@@ -1,6 +1,7 @@
 import React from 'react';
 import { View, Text, FlatList, ActivityIndicator } from 'react-native';
 import { useApi } from '../hooks/useApi';
+import { commonStyles } from '../theme/CommonStyles';
 
 export default function HomeScreen() {
   const { data, isLoading, isError, refetch } = useApi({
